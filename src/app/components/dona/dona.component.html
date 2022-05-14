@@ -1,0 +1,15 @@
+<div class="card">
+    <div class="card-body">
+        
+       <h3 *ngIf="titulo == '' ? 'sin titulo': 'no hay nada' " >{{titulo}}</h3>
+        <div style="display: block">
+            <canvas baseChart
+              [data]="data"
+              [labels]="labels"
+              [type]="doughnutChartType">
+              [colors]="colors"
+            </canvas>
+          </div>
+        
+    </div>
+</div>
